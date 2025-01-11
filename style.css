@@ -1,0 +1,127 @@
+
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #161616;
+}
+
+h1 {
+    color: white;
+    transition: 0.5s;
+    transition:  all Is ease;
+    zoom : 10px;
+}
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #161616;
+    border: 2px solid #b76a49;
+    font-size: 5em;
+    color: white;
+    text-shadow: 0 0 25px beige;
+    cursor: pointer;
+    transition: 0.3s;
+    transition:  all Is ease;
+}
+
+
+button {
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 1.5em;
+    cursor: pointer;
+     word-spacing: 0.1em;
+     font-weight: 400;
+     transition: 0.5s;
+    text-transform: lowercase ;
+    background-color:#caa125;
+    transition: all Is ease;
+    align-items: center;
+}
+
+button:hover{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: 0.2s;
+    box-shadow: #caa125 10%;
+    transition: 0.5s;
+    background-color: rgb(238, 191, 154);
+    box-shadow: 0 0 35px #c8551c;
+    
+   
+}
+     
+
+h1:hover{
+    text-shadow: #411603;
+    letter-spacing: 5px;
+  
+    size: 2em;
+    text-shadow: 0 0 20px rgb(186, 24, 3);
+    
+
+}
+.box:hover{
+    background-color: #dcc196;
+    color: black;
+    text-shadow: 0 0 25px #411603 ;
+    border-radius: 25%;
+    transition: 0.4s;
+    border :5px white ;
+    box-shadow: 0 0 40px rgb(216, 156, 45);
+    
+}
+.info{
+    color: white;
+   font-style: initial;
+}
+.winning{
+    background-color: greenyellow;
+    box-shadow: rgb(116, 251, 116);
+    transition: 0.4s;
+    
+}.winning::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 0, 0.5);
+    z-index: -1;
+}
+.line{
+    background-color: #b76a49;
+    width: 21vw;
+    text-shadow:0 0 40px #cea77b;
+    height: 4px;
+    position: absolute;
+    z-index: 1;
+    transition: ease-in-out 0.2
+s;
+} 
+  @media screen and (max-width: 800px)
+{
+#contents{width:90%}
+}
